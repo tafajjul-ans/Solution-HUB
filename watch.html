@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Solution HUB</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body class="watch-body">
+
+
+<div class="watch-page">
+
+
+<div class="video-box">
+
+
+<div class="video-container" id="videoContainer">
+
+
+<video id="video" playsinline>
+
+<source id="videoSource" type="video/mp4">
+
+</video>
+
+
+<div class="tap-zone left" id="leftTap"></div>
+
+<div class="tap-zone right" id="rightTap"></div>
+
+
+<div class="seek-popup" id="seekPopup">
++10s
+</div>
+
+
+
+<div class="overlay" id="overlay">
+
+
+<div class="center-play" id="centerPlay">
+
+▶
+
+</div>
+
+
+
+<div class="controls" id="controls">
+
+
+<div class="progress">
+
+<input
+type="range"
+id="seek"
+value="0"
+min="0"
+max="100">
+
+</div>
+
+
+
+<div class="bottom">
+
+
+<div class="left">
+
+
+<button id="playPause">
+▶
+</button>
+
+
+<span id="current">
+0:00
+</span>
+
+
+/
+
+
+<span id="duration">
+0:00
+</span>
+
+
+</div>
+
+
+
+<div class="right">
+
+
+<button id="fullscreen">
+⛶
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="video-details">
+
+<h2 id="videoTitle"></h2>
+
+<p id="videoDescription"></p>
+
+</div>
+
+
+
+<div class="related">
+
+<h3>Related Videos</h3>
+
+<div id="relatedVideos"></div>
+
+</div>
+
+
+
+<div class="loading" id="loading">
+
+<div class="loader"></div>
+
+</div>
+
+
+
+<script src="watch.js"></script>
+
+
+</body>
+</html>
