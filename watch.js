@@ -370,6 +370,10 @@ loadVideo(currentVideo);
 
 
 });
+video.addEventListener("error", () => {
+    console.log("Error Code:", video.error?.code);
+    alert("Video Error Code: " + video.error?.code);
+});
 
 
 
