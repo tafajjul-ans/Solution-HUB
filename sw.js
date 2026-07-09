@@ -1,4 +1,4 @@
-const CACHE = "solutionhub-v2";
+const CACHE = "solutionhub-v3";
 
 const FILES = [
   "/",
