@@ -43,12 +43,17 @@
 <div id="videos" class="videos"></div>
 
 </main>
+  
   <script>
-  if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
-  }
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js")
+      .then(() => console.log("Service Worker Registered"))
+      .catch(err => console.error("SW Error:", err));
+  });
 }
-  </script>
+</script>
+  
 <script src="script.js"></script>
 </body>
 </html>
